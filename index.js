@@ -1,0 +1,1 @@
+import "./Rozdzial1/trygonometria.js";
