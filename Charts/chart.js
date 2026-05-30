@@ -11,7 +11,7 @@ export class Chart {
     legend = false;
 
     constructor(canvasId, {
-        pixelsPerUnit = 50, // ile px = 1 jednostka
+        pixelsPerUnit = 20, // ile px = 1 jednostka
         unitScale = 1,      // ile "wartości" ma 1 jednostka osi
         precision = 0
     } = {}) {

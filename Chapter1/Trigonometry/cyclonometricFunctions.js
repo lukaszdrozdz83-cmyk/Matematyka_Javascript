@@ -1,11 +1,8 @@
 import {Chart, FunctionData} from "../../Charts/chart.js";
 
 
-const chart = new Chart("arcsinFunction", {
-    pixelsPerUnit: 20,
-    unitScale: 1,
-    precision: 0
-});
+// arcsin()
+const chart = new Chart("arcsinFunction");
 
 chart.setFunctions([
     new FunctionData(
@@ -16,3 +13,17 @@ chart.setFunctions([
 ]);
 
 chart.draw();
+
+
+// arccos()
+const chart2 = new Chart("arccosFunction");
+
+chart2.setFunctions([
+    new FunctionData(
+        x => Math.acos(x),
+        "blue",
+        "arccos(x)"
+    )
+]);
+
+chart2.draw();
