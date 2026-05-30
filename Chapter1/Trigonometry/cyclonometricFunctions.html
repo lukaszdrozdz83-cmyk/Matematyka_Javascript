@@ -32,12 +32,91 @@
 <h6 class="functionTitle">Wykres funkcji arcsin(x)</h6>
 <p>Jest to funkcja odwrotna do funkcji sinus, oznaczana jako arcsin(x). Y jest miarą łukową kąta z przedziału <-π/2, π/2>. 
     Funkcja jest określona i ciągła dla x z przedziału <-1, 1>.</p>
-<canvas id="arcsinFunction" width="500" height="250"></canvas>
+
+<div class="functionDescription">
+<canvas class="chart" id="arcsinFunction" width="500" height="250"></canvas>
+
+<div class="formula">
+    arcsin(x) = y <br>
+    sin(y) = x <br>
+    y ∈ <-π/2, π/2> <br>
+    x ∈ <-1, 1>
+</div>
+</div>
+<h1 class="functionTitle">Wykres funkcji arcsin(x) dla wartości w stopniach</h1>
+<div class="functionDescription">
+<canvas class="chart" id="arcsinInDegreesFunction" width="500" height="250"></canvas>
+
+<div class="formula">
+    var asinDegrees = x => Math.asin(x) * (180 / Math.PI) <br>
+    arcsin(x) = y <br>
+    y ∈ <-90, 90> <br>
+    x ∈ <-1, 1>
+</div>
+</div>
+
 
 <h6 class="functionTitle">Wykres funkcji arccos(x)</h6>
 <p>Jest to funkcja odwrotna do funkcji cosinus, oznaczana jako arccos(x). Y jest miarą łukową kąta z przedziału <0, π>. 
     Funkcja jest określona i ciągła dla x z przedziału <-1, 1>.</p>
+    <div class="functionDescription">
 <canvas id="arccosFunction" width="500" height="250"></canvas>
+<div class="formula">
+    arccos(x) = y <br>
+    cos(y) = x <br>
+    y ∈ <0, π> <br>
+    x ∈ <-1, 1>
+</div>
+    </div>
+
+
+<h6 class="functionTitle">Wykres funkcji arccos(x) dla wartości w stopniach</h6>
+<div class="functionDescription">
+<canvas id="arccosInDegreesFunction" width="500" height="250"></canvas>
+<div class="formula">
+    var acosDegrees = x => Math.acos(x) * (180 / Math.PI) <br>
+    arccos(x) = y <br>
+    y ∈ <0, 180> <br>
+    x ∈ <-1, 1>
+</div>
+</div>
+
+<h6 class="functionTitle">Wykres funkcji arctan(x)</h6>
+<p>Jest to funkcja odwrotna do funkcji tangens, oznaczana jako arctan(x). Y jest miarą łukową kąta z przedziału <-π/2, π/2>. 
+    Funkcja jest określona i ciągła dla wszystkich x.</p>
+    <div class="functionDescription">
+<canvas id="arctanFunction" width="500" height="250"></canvas>
+<div class="formula">
+    arctan(x) = y <br>
+    tan(y) = x <br>
+    y ∈ <-π/2, π/2> <br>
+    x ∈ R
+</div>
+    </div>
+    <h6 class="functionTitle">Wykres funkcji arctan(x) dla wartości w stopniach</h6>
+<div class="functionDescription">
+<canvas id="arctanInDegreesFunction" width="500" height="250"></canvas>
+<div class="formula">
+    var atanDegrees = x => Math.atan(x) * (180 / Math.PI) <br>
+    arctan(x) = y <br>
+    y ∈ <-90, 90> <br>
+    x ∈ R
+</div>
+</div>
+
+
+<h6 class="functionTitle">Wykres funkcji atan2(x, y)</h6>
+<p>Jest to funkcja odwrotna do funkcji tangens, oznaczana jako atan2(y, x) gdzie x i y to długości boków prostokątnego trójkąta. 
+    Funkcja zwraca kąt w radianach z przedziału <-π, π>.
+</p>
+<p>Wykres gdy y = 1</p>
+<canvas id="atan2Function" width="500" height="250"></canvas>
+
+<h6 class="functionTitle">Wykres funkcji arcctg(x)</h6>
+<p>Jest to funkcja odwrotna do funkcji cotangens, oznaczana jako arcctg(x). Y jest miarą łukową kąta z przedziału <0, π>. 
+    Funkcja jest określona i ciągła dla wszystkich x. W javascript nie występuje</p>
+
+
 
 </body>
 </html>
