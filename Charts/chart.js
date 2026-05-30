@@ -8,6 +8,8 @@ export class FunctionData {
 
 export class Chart {
 
+    legend = false;
+
     constructor(canvasId, {
         pixelsPerUnit = 50, // ile px = 1 jednostka
         unitScale = 1,      // ile "wartości" ma 1 jednostka osi
@@ -46,6 +48,10 @@ export class Chart {
         this.functions = [];
     }
 
+    showLegend() {
+        this.legend = true;
+    }
+
     draw() {
 
         const { width, height } = this.canvas;
@@ -63,7 +69,9 @@ export class Chart {
             this.drawFunction(f);
         }
 
-        this.drawLegend();
+        if(this.legend) {
+            this.drawLegend();
+        }
     }
 
     // ================= GRID =================
@@ -245,7 +253,7 @@ export class Chart {
             this.ctx.stroke();
 
             this.ctx.fillStyle = "black";
-            this.ctx.font = "14px Arial";
+            this.ctx.font = "10px Arial";
 
             this.ctx.fillText(f.name, x + 50, yy + 5);
         }

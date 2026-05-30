@@ -1,4 +1,4 @@
-import "./Rozdzial1/trygonometria.js";
+import "./Chapter1/Trigonometry/trigonometricFunctions.js";
 import {Chart, FunctionData} from "./Charts/chart.js";
 
 
