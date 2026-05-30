@@ -17,3 +17,8 @@
     padding: 0.5em;
     border-radius: 5px;
 }
+
+canvas {
+    border: 1px solid black;
+    margin-right: 1em;
+}

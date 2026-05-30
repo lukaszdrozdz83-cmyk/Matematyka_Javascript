@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Funkcje hiperboliczne</title>
+
+    <link rel="stylesheet" href="../../Common/style.css" />
+    <script type="module" src="HyperbolicFunctions.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="cyclonometricFunctions.html">Funkcje cyklonometryczne</a>
+      </li>
+      <li><a href="../../index.html">Powrót</a></li>
+    </ul>
+
+    <h1>Funkcje hiperboliczne</h1>
+    <h6 class="functionTitle">Wykres funkcji tangens hiperboliczny</h6>
+    <p>Wyliczana wartość funkcji tangens hiperboliczny dla danego argumentu x zawiera się w przedziale (-1, 1).
+        Używana w sieciach neuronowych jako funkcja aktywacji.</p>
+    <div class="functionDescription">
+      <canvas id="tanhFunction" width="500" height="250"></canvas>
+      <div class="formula">
+        tanh(x) = (e^x - e^(-x)) / (e^x + e^(-x)) <br />
+        x ∈ R
+      </div>
+    </div>
+  </body>
+</html>
