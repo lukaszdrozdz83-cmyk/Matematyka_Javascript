@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Logarytmy</title>
+
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Common/style.css">
+    <script type="module" src="logarithms.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="../../index.html">Powrót</a></li>
+    </ul>
+<h1>Logarytmy</h1>
+<p>
+    Funkcje logarytmiczne to funkcje odwrotne do funkcji wykładniczych.
+    W funkcjach wykładniczych podajesz wykładnik i obliczasz wartość funkcji, np. 2^x,
+    a w funkcjach logarytmicznych podajesz wartość funkcji i obliczasz wykładnik, np. log2(x).
+</p>
+
+<h6 class="functionTitle">Wykres funkcji logarytmicznej</h6>
+<p>Logarytm naturalny.</p>
+
+<div class="functionDescription">
+<canvas class="chart" id="logarithmEFunction" width="500" height="250"></canvas>
+
+<div class="formula">
+Math.log(x)
+</div>
+</div>
+
+<h6 class="functionTitle">Wykres funkcji logarytmu dziesiętnego</h6>
+<p>Logarytm dziesiętny.</p>
+
+<div class="functionDescription">
+<canvas class="chart" id="logarithm10Function" width="500" height="250"></canvas>
+
+<div class="formula">
+Math.log10(x)
+</div>
+</div>
+
+<h6 class="functionTitle">Wykres funkcji logarytmu o podstawie 2</h6>
+<p>Logarytm dwójkowy.</p>
+
+<div class="functionDescription">
+<canvas class="chart" id="logarithm2Function" width="500" height="250"></canvas>
+
+<div class="formula">
+Math.log2(x)
+</div>
+</div>
+
+
+</body>
+</html>
